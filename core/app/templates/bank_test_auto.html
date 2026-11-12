@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="" />
+    <style></style>
+  </head>
+  <body>
+    <div style="visibility: hidden">
+      <form
+        action="https://bpm.shaparak.ir/pgwchannel/payment.mellat"
+        method="post"
+        name="input"
+      >
+        <label for="RefId">token</label>
+        <input
+          {% comment %} style="visibility: hidden" {% endcomment %}
+          type="text"
+          value="{{token}}"
+          name="RefId"
+          id="RefId"
+        />
+        <label for="MobileNo">cellphone</label>
+        <input
+          {% comment %} style="visibility: hidden" {% endcomment %}
+          type="text"
+          value="09012700470"
+          name="MobileNo"
+          id="mobileNo"
+        />
+        <input type="submit" value="submit" id="submit" />
+      </form>
+    </div>
+    <script>
+      document.getElementById("submit").click();
+    </script>
+  </body>
+</html>

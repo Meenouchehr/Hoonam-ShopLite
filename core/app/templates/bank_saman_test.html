@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="" />
+    <style></style>
+  </head>
+  <body>
+    <div style="visibility: hidden">
+      <form
+      action="https://ikc.shaparak.ir/TPayment/Payment/index"
+      method="post"
+      name="input"
+      >
+        <label for="RefId">token</label>
+        <input type="text" value={{token}} name="Token" id="Token" />
+        <input type="text" value="543210000" name="MerchantId" id="MM" />
+        <input type="text" value="https://office.hoonamapps.com/shoplite/core/saman/callbak/" name="RedirectURL" id="RedirectURL" />
+        <input type="submit" value="submit" id="submit"/>
+      </form>
+    </div>
+    <script>
+      document.getElementById("submit").click();
+    </script>
+  </body>
+</html>
